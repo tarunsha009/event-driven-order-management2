@@ -91,7 +91,13 @@ if __name__ == "__main__":
 
     # Start the order service
     order_service = OrderService()
-    if order_service.place_order(1, "item1", 10):
-        logger.info("Order placed successfully!")
-    else:
-        logger.error("Order could not be placed due to insufficient stock.")
+
+    while True:
+        order_id = int(time.time())
+        if order_service.place_order(order_id, "item1", 10):
+            logger.info("Order placed successfully!")
+        else:
+            logger.error("Order could not be placed due to insufficient stock.")
+        
+        # Sleep to avoid tight looping, simulate waiting for a new order
+        time.sleep(10)

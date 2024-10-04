@@ -83,4 +83,4 @@ services:
         condition: service_healthy
       kafka-ui:
         condition: service_started
-    restart: always
+    # restart: always
