@@ -1,0 +1,9 @@
+2024-10-03 23:16:28.563 | INFO     | app.kafka_admin:create_topics:17 - Topic 'orders' created successfully.
+2024-10-03 23:16:28.563 | INFO     | app.kafka_admin:create_topics:17 - Topic 'validated-orders' created successfully.
+2024-10-03 23:16:28.564 | INFO     | app.kafka_admin:close:23 - Kafka Admin Client closed.
+2024-10-03 23:18:59.242 | WARNING  | app.kafka_admin:create_topics:19 - Failed to create topic 'orders': KafkaError{code=TOPIC_ALREADY_EXISTS,val=36,str="Topic 'orders' already exists."}
+2024-10-03 23:18:59.244 | WARNING  | app.kafka_admin:create_topics:19 - Failed to create topic 'validated-orders': KafkaError{code=TOPIC_ALREADY_EXISTS,val=36,str="Topic 'validated-orders' already exists."}
+2024-10-03 23:18:59.245 | INFO     | app.kafka_admin:close:23 - Kafka Admin Client closed.
+2024-10-03 23:18:59.264 | ERROR    | app.inventory_manager:check_inventory:13 - Product item1 not found in inventory.
+2024-10-03 23:18:59.264 | ERROR    | __main__:place_order:21 - Insufficient stock for product item1. Order cannot be placed.
+2024-10-03 23:18:59.265 | ERROR    | __main__:<module>:66 - Order could not be placed due to insufficient stock.
